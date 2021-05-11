@@ -1,0 +1,108 @@
+/* ====================== Utility Classes ===================== */
+
+.btn {
+    font-size: 1.25rem;
+    background: var(--btn-background);
+    padding: 0.35em 0.75em;
+    color: var(--btn-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--btn-hover-color);
+}
+
+
+/* Overall cards */
+
+.card {
+    margin: 2rem 0;
+    background: var(--card-background);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:first-child {
+    margin-top: 0;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* === Card Text === */
+
+.text p {
+    color: var(--card-txt-color);
+}
+
+.text>* {
+    margin-bottom: 0.75em;
+}
+
+.text> :last-child {
+    margin-bottom: 0;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card button {
+    display: none;
+    margin-left: 0.75em;
+}
+
+/* === Form === */
+
+#form-section {
+    background-color: #f98e9b;
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+form {
+    max-width: 800px;
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column; 
+    margin: 0 auto;
+    gap: 0.5em;
+}
+
+#form-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+#form-container input {
+    padding: 0.5em;
+}
+
+#title { flex: 3; }
+
+#price { 
+    flex: 1;
+    min-width: 120px;
+ }
+
+textarea {
+    padding: 0.5em;
+}
+
+#text-add {
+    display: flex;
+    gap: 0.5em;
+}
+textarea{ flex: 1; }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+
+    <!-- Font Awesome Kit URL -->
+    <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="left-box">
+            <a href="./index.html">
+                <img src="./assets/ban-logo-mini.svg" alt="ban the dishes logo">
+            </a>
+        </div>
+        <div class="right-box">
+            <a href="./menu.html">Menu</a>
+            <a href="#"> <i class="fas fa-globe"></i>FR</a>
+            <button id="login">
+                <i class="fas fa-user-circle"></i>
+                <p>Log-in</p>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="heading">JAC Bistro: Main Dishes</h1>
+        <ul>
+            <li class="card">
+                <div class="text">
+                    <h3 class="i-title">Soupe Chorba / Chorba Soup</h3>
+                    <p class="i-description">Soupe traditionnelle du Maroc composée de tomates, de céleri frais, d'épices et de légumes. / Traditional Moroccan soup with tomatoes, fresh celery, spices, and vegetables.</p>
+                    <h3 class="i-price">$14.50</h3>
+                </div>
+                <div class="buttons">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="text">
+                    <h3 class="i-title">Poutine brontosaur / Brontosaur Poutine</h3>
+                    <p class="i-description">Boeuf haché, oignons et champignons grillés. / Ground beef, grilled mushrooms and onions</p>
+                    <h3 class="i-price">$8.95</h3>
+                </div>
+                <div class="buttons">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="text">
+                    <h3 class="i-title">Yaki Udon</h3>
+                    <p class="i-description">Nouilles udon frites à la poêle servies avec du boeuf, des champignons et des oignons verts. / Pan-fried udon noodles served with beef, mushrooms, and green onions.</p>
+                    <h3 class="i-price">$12.90</h3>
+                </div>
+                <div class="buttons">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div id="form-section">
+        <form action="" id="form">
+            <h2 class="heading">New Meal Information</h2>
+            <div id="form-container">
+                <input type="text" id="title" placeholder="Meal title" required>
+                <input type="number" id="price" step=".01" placeholder="Meal Price" required>
+            </div>
+            <div id="text-add">
+                <textarea id="desc" name="description" cols="30" rows="3" maxlength="200" placeholder="Meal Description" required></textarea>
+                <button id="submit-btn" class="btn"><i class="fas fa-plus"></i></button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban the dishes</title>
+
+    <!-- Font Awesome Kit URL -->
+    <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-box">
+            <a href="./index.html">
+                <img src="./assets/ban-logo-mini.svg" alt="ban the dishes logo">
+            </a>
+        </div>
+        <div class="right-box">
+            <a href="./menu.html">Menu</a>
+            <a href="#"> <i class="fas fa-globe"></i>FR</a>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <!-- Photo by Dan Gold via Unsplash -->
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="gourmet burger and fries">
+
+            <div class="text">
+                <h1 class="heading">Delicious meals, anytime, anywhere.</h1>
+                <a href="#signup">Sign-up Now</a>
+            </div>
+        </section>
+        <section id="signup">
+            <h2 class="heading">Sign-up Form</h2>
+
+            <!-- Add your form here -->
+
+            <form action="" method="POST">
+
+                <label for="first">First name</label>
+                <input type="text" id="first" name="first" required>
+
+                <label for="second">Last name</label>
+                <input type="text" id="second" name="second" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd" required minlength="8" maxlength="12">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="prov">Province</label>
+                <select name="prov" id="prov" required>
+                    <option value="">-- Select a province --</option>
+                    <option value="on">ON</option>
+                    <option value="qc">QC</option>
+                    <option value="bc">BC</option>
+                    <option value="al">AB</option>
+                    <option value="al">NS</option>
+                    <option value="al">NB</option>
+                    <option value="al">PE</option>
+                    <option value="al">SK</option>
+                    <option value="al">NL</option>
+                </select>
+                <input type='submit' value="Sign-up">
+                <!-- <button>Sign-up</button> -->
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>
