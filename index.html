@@ -3,79 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ban the dishes</title>
+    <title>CodeHeap Code Learning School</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@600&family=Mulish&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Kit URL -->
-    <script src="https://kit.fontawesome.com/20d18bedad.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
-    <header>
-        <div class="left-box">
-            <a href="./index.html">
-                <img src="./assets/ban-logo-mini.svg" alt="ban the dishes logo">
-            </a>
-        </div>
-        <div class="right-box">
-            <a href="./menu.html">Menu</a>
-            <a href="#"> <i class="fas fa-globe"></i>FR</a>
+    <header class="menu">
+        <div class="max-w center">
+            <h1>CodeHeap</h1>
+            <p>Coding made easy</p>
         </div>
     </header>
-    <main>
-        <section id="hero">
-            <!-- Photo by Dan Gold via Unsplash -->
-            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80" alt="gourmet burger and fries">
+    <nav>
+        <ul class="max-w">
+            <li class="logo"><a href="#"><span>CH</span></a></li>
 
-            <div class="text">
-                <h1 class="heading">Delicious meals, anytime, anywhere.</h1>
-                <a href="#signup">Sign-up Now</a>
+            <div class="flex-even">
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main class="max-w">
+        <section class="hero center pad">
+            <h2>Learn coding the easy way</h2>
+            <p>Learn through immersive learning scenarios that use real life examples taught by industry leaders at an
+                affordable price.</p>
+            <a href="#">Try for free!</a>
+        </section>
+
+        <section class="highlights">
+            <div class="high center pad">
+                <div class="high-img ">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="friends coding and laughting">
+                </div>
+                <div class="high-text first">
+                    <h3>Interactive learning with instantenious feedback</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea possimus autem nam debitis
+                        aspernatur deserunt nostrum non nemo omnis? Nostrum velit, atque modi dolor itaque consequatur
+                        fuga natus!</p>
+                </div>
+            </div>
+            <div class="high center second pad">
+                <div class="high-img">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                        alt="teacher pointing at laptop screen">
+                </div>
+                <div class="high-text center">
+                    <h3>Level up your skills or start an excitting new carrer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat maxime voluptatibus
+                        consequatur dolore eaque quidem rerum voluptatum quae labore iure, pariatur similique dicta
+                        ducimus delectus numquam ipsam sed voluptates.</p>
+                </div>
             </div>
         </section>
-        <section id="signup">
-            <h2 class="heading">Sign-up Form</h2>
 
-            <!-- Add your form here -->
-
-            <form action="" method="POST">
-
-                <label for="first">First name</label>
-                <input type="text" id="first" name="first" required>
-
-                <label for="second">Last name</label>
-                <input type="text" id="second" name="second" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd" required minlength="8" maxlength="12">
-
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" required>
-
-                <label for="prov">Province</label>
-                <select name="prov" id="prov" required>
-                    <option value="">-- Select a province --</option>
-                    <option value="on">ON</option>
-                    <option value="qc">QC</option>
-                    <option value="bc">BC</option>
-                    <option value="al">AB</option>
-                    <option value="al">NS</option>
-                    <option value="al">NB</option>
-                    <option value="al">PE</option>
-                    <option value="al">SK</option>
-                    <option value="al">NL</option>
-                </select>
-                <input type='submit' value="Sign-up">
-                <!-- <button>Sign-up</button> -->
-            </form>
-
+        <section class="tech center pad">
+            <h2>Technologies</h2>
+            <div class="flex">
+                <img src="./assets/csharp-logo.png" alt="c# logo">
+                <img src="./assets/typescript-logo.png" alt="typescript logo">
+                <img src="./assets/git-logo.png" alt="git logo">
+                <img src="./assets/javascript-logo.png" alt="javascript logo">
+                <img src="./assets/rust-logo.png" alt="rust logo">
+                <img src="./assets/css-logo.png" alt="css logo">
+                <img src="./assets/html-logo.png" alt="html logo">
+                <img src="./assets/python-logo.png" alt="python logo">
+            </div>
         </section>
+
     </main>
+
+    <footer>
+        <div class="max-w center">
+            <div class="menu">
+                <h4>CodeHeap</h4>
+                <p>© 2021 all rights reserved</p>
+            </div>
+            <nav>
+                <ul class="flex-even">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 
 </html>
